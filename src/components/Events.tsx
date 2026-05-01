@@ -6,19 +6,19 @@ const Events = () => {
       date: 'April 2026',
       title: 'IEEE 27th Aegean Regional Meeting',
       description: 'Successfully organized and hosted the 27th Aegean Regional Meeting at Yaşar University, coordinating IEEE student branches from all across the region.',
-      image: '/event-ege.jpg'
+      image: `${import.meta.env.BASE_URL}event-ege.jpg`
     },
     {
       date: 'February 2026',
       title: "IEEE Summit'26",
       description: "Led the organization of Summit'26, a flagship event featuring industry leaders and tech-driven networking opportunities.",
-      image: '/event-summit.jpg'
+      image: `${import.meta.env.BASE_URL}event-summit.jpg`
     },
     {
       date: 'March 2025',
       title: "IEEE DevSummit'25",
       description: "Directed the DevSummit'25, focusing on technical development, software workshops, and connecting student developers with the industry.",
-      image: '/event-devsummit.jpg'
+      image: `${import.meta.env.BASE_URL}event-devsummit.jpg`
     }
   ];
 

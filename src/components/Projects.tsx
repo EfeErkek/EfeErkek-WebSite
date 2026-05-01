@@ -7,7 +7,7 @@ const Projects = () => {
       description: 'A comprehensive digital footprint analysis tool that scans and evaluates personal data exposure across the web. Designed to identify security threats, visualize harassment levels, and help users reclaim their digital privacy through advanced auditing algorithms.',
       tech: ['Cybersecurity', 'Privacy', 'Data Analysis', 'Web Scanning'],
       link: 'https://github.com/EfeErkek',
-      image: '/proj-auth.jpg',
+      image: `${import.meta.env.BASE_URL}proj-auth.jpg`,
       status: 'Coming Soon'
     },
     {
@@ -15,7 +15,7 @@ const Projects = () => {
       description: 'An advanced offline AI assistant capable of processing natural language queries locally. Leveraging specialized LLM integration and ASP.NET backends for 100% data confidentiality and real-time response accuracy.',
       tech: ['Python', 'AI', 'ASP.NET', 'LLM Integration'],
       link: 'https://github.com/EfeErkek/MergenAI',
-      image: '/proj-mergen.jpg',
+      image: `${import.meta.env.BASE_URL}proj-mergen.jpg`,
       status: 'View on GitHub'
     },
     {
@@ -23,7 +23,7 @@ const Projects = () => {
       description: 'A native Android application developed in Java that bridges traditional coffee fortune-telling with a modern digital experience and personalized user feedback.',
       tech: ['Java', 'Android Studio', 'Mobile Architecture', 'SQL'],
       link: 'https://github.com/EfeErkek/Fahvel-FalApp-v1.0',
-      image: '/proj-fahvel.jpg',
+      image: `${import.meta.env.BASE_URL}proj-fahvel.jpg`,
       status: 'View on GitHub'
     }
   ];
