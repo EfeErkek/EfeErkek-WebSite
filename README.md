@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
+# 💻 Modern Portfolio Engine | React 19 + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for a high-performance, responsive portfolio website built with a focus on modern web standards, strict type safety, and component-driven architecture.
 
-Currently, two official plugins are available:
+## 🏗 Architecture & Technical Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project is architected as a **Single Page Application (SPA)** using the latest React ecosystem:
 
-## React Compiler
+*   **Core Framework:** **React 19** (leveraging improved concurrent rendering).
+*   **Type Safety:** **TypeScript** for robust development and compile-time error checking.
+*   **Build Pipeline:** **Vite** for near-instant Hot Module Replacement (HMR) and optimized production bundling.
+*   **Styling:** **Modular CSS** approach to ensure style encapsulation and prevent global namespace pollution.
+*   **Code Quality:** Integrated **ESLint 9+** with strict TypeScript rules to maintain clean code standards.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Functional Modules
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The application is broken down into reusable, decoupled components:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+*   **Hero Engine:** Features a dynamic entry point with optimized image loading.
+*   **Dynamic Project Showcase:** A data-driven grid system that displays technical projects (MergenAI, Privacy Auditor, etc.) via structured TypeScript interfaces.
+*   **Timeline Component:** A custom-built vertical timeline to visualize professional milestones and event leadership (IEEE).
+*   **Responsive Navigation:** A mobile-first, hook-based navigation system.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Technical Highlights
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 1. MergenAI Integration
+The site highlights the **MergenAI** project, emphasizing local LLM integration and ASP.NET backends for 100% data privacy.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 2. Performance Optimization
+*   **Zero External UI Libraries:** All components are custom-coded to minimize bundle size.
+*   **Vite Optimization:** Utilizes code-splitting and asset minification for fast First Contentful Paint (FCP).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 💻 Getting Started
+
+### Prerequisites
+*   Node.js 18.x or higher
+*   npm 9.x or higher
+
+### Local Development
+```bash
+# 1. Clone the repository
+git clone [https://github.com/efeerkek/portfolio-v2.git](https://github.com/efeerkek/portfolio-v2.git)
+
+# 2. Install dependencies
+npm install
+
+# 3. Spin up development server
+npm run dev
